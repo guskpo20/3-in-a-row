@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color:white;
+}
+
+h1{
+    font-size: 5em;
+}
+
+.tablero{
+    padding: 25px 0 ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2px;
+    column-gap: 2px;
+}
+
+.usable{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    font-weight: bold;
+    color: #000;
+}
+
+button{
+    font-size: 10em;
+}
+
+@media (max-width: 970px) {
+    .usable{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 470px) {
+    .usable{
+        width: 100px;
+        height: 100px;
+    }
+}
